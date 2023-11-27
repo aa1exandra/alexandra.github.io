@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>alexandra rivera</title>
+    <title>alex's portfolio</title>
     <style>
         body {
             margin: 0;
             font-family: 'Courier New', Courier, monospace;
-            background-image: url('pink background.jpeg'); /* Replace with your background image URL */
+            background-image: url('background.jpeg');
             background-size: cover;
             background-position: center;
             display: flex;
@@ -22,7 +22,6 @@
             display: grid;
             grid-template-columns: 45% 45%;
             justify-content: space-around;
-            overflow: auto; /* Enable scrolling */
         }
 
         #left-section,
@@ -42,14 +41,25 @@
         #left-section img {
             max-width: 100%;
             height: auto;
+            border-radius: 8px; /* Optional: Add border-radius to the image */
         }
 
         #left-section h1 {
             font-size: 2em;
         }
 
-        #left-section p {
-            font-size: 1.2em; 
+        #left-section button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #left-section button:hover {
+            background-color: #45a049;
         }
     </style>
 </head>
@@ -57,34 +67,12 @@
 <body>
     <div id="content-container">
         <div id="left-section">
-            <div>
-                <img src="welcome.png" alt="welcome">
-            </div>
-            <div>
-                <h1>about</h1>
-                <p>alexandra rivera (alex)  is a new york-based graphic designer and video editor. born and raised in queens, new york, alex is currently pursuing an associate's degree in digital media at laguardia community college. aside from being a student, she is also a president’s society ambassador, perkins peer mentor, and student success mentor at laguardia. in her art, alex takes inspiration from the early 2000’s and loves incorporating her femininity in her work. after graduating from laguardia, she plans to transfer to queens college, where she will hone her graphic designing skills.
-</p>
-            </div>
+            <img src="welcome.png" alt="welcome!">
+            <h1>Alex's Works</h1>
+            <button onclick="window.location.href='videos.html'">alex's works</button>
         </div>
 
-        <div id="right-section">
-            <div class="video-container">
-                <h2>animation</h2>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/Q9TTd9nmc5A?si=OjUflBxodW81aNPD" frameborder="0" allowfullscreen></iframe>
-            </div>
-
-            <div class="video-container">
-                <h2>new york story</h2>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/i1kqnj-U0Ec?si=ZSAU17MoJ5N3-9Q" frameborder="0" allowfullscreen></iframe>
-            </div>
-            
- <div class="video-container">
-                <h2>ice cream</h2>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/fGyJaD0oQSk?si=UOK4Qjr3y2SwH2LP" frameborder="0" allowfullscreen></iframe>
-            </div>
-      
-
-        </div>
+        <!-- Right section intentionally left empty for the landing page -->
     </div>
 </body>
 
