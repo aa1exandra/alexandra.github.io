@@ -6,54 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>alexandra rivera</title>
     <style>
-        
         body {
-            background-image: url('background.jpeg'); 
+            margin: 0;
+            font-family: 'Courier New', Courier, monospace;
+            background-image: url('ee.png'); /* Replace with your background image URL */
             background-size: cover;
-            font-family: 'Courier New', monospace;
+            background-position: center;
             display: flex;
+            align-items: center;
             justify-content: space-between;
+            height: 100vh;
+        }
+
+        #left-section,
+        #right-section {
+            width: 45%;
             padding: 20px;
+            box-sizing: border-box;
             color: white;
         }
 
-        .container {
+        #right-section {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 50px;
-        }
-
-        .content-left {
-            flex: 1;
-            text-align: center;
-        }
-
-        .content-left img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        .content-right {
-            flex: 1;
-            text-align: center;
+            flex-direction: column;
+            gap: 20px;
         }
 
         .video-container {
-            opacity: 0; /* Initially set opacity to 0 for fade-in effect */
-            animation: fadeIn 2s forwards; /* 2s duration for fade-in effect */
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out forwards;
         }
 
-        .video-title {
-            font-size: 1.5em;
-            margin-bottom: 10px;
-        }
-
-        @keyframes fade-in {
+        @keyframes fadeIn {
             from {
                 opacity: 0;
             }
-
             to {
                 opacity: 1;
             }
@@ -62,70 +49,30 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="content-left">
-            <h1> alexandra rivera </h1>
-            <img src="welcomegif" alt="welcome!">
-            <h1>about</h1>
-            <p> alexandra rivera (alex)  is a new york-based graphic designer and video editor. born and raised in queens, new york, alex is currently pursuing an associate's degree in digital media at laguardia community college. aside from being a student, she is also a president’s society ambassador, perkins peer mentor, and student success mentor at laguardia. in her art, alex takes inspiration from the early 2000’s and loves incorporating her femininity in her work. after graduating from laguardia, she plans to transfer to queens college, where she will hone her graphic designing skills.</p>
-        </div>
-
-        <div class="content-right">
-            <h1> alex's work </h1>
-            <div id="videos-container">
-            <h2>Video 1: Introduction</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/Q9TTd9nmc5A?si=OjUflBxodW81aNPD" frameborder="0"
-                allowfullscreen></iframe>
-            </div>
-
-
-            <div class="video-container" style="animation: fade-in 2s ease-in-out;">
-                <h2 class="video-title">new york story: the beauty of new york</h2>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/i1kqnj-U0Ec?si=ZSAU17MoJ5N3-9QI" frameborder="0"
-                    allowfullscreen></iframe>
-            </div>
-
-            
-            <div class="video-container" style="animation: fade-in 2s ease-in-out;">
-                <h2 class="video-title">animation on social cause: swipe left!</h2>
-                <iframe width="560" height="315" src="swipe left on MTA prices.mp4" frameborder="0"
-                    allowfullscreen></iframe>
-            </div>
-
-              <div class="video-container" style="animation: fade-in 2s ease-in-out;">
-                <h2 class="video-title">photoshop animation: more sprinkles, please! </h2>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/fGyJaD0oQSk?si=UOK4Qjr3y2SwH2LP" frameborder="0"
-                    allowfullscreen></iframe>
-            </div>
-
-           
-
-        </div>
+    <div id="left-section">
+        <img src="welcome.gif" alt="welcome!" style="max-width: 100%;">
+        <h1>about</h1>
+        <p>alexandra rivera (alex)  is a new york-based graphic designer and video editor. born and raised in queens, new york, alex is currently pursuing an associate's degree in digital media at laguardia community college. aside from being a student, she is also a president’s society ambassador, perkins peer mentor, and student success mentor at laguardia. in her art, alex takes inspiration from the early 2000’s and loves incorporating her femininity in her work. after graduating from laguardia, she plans to transfer to queens college, where she will hone her graphic designing skills.</p>
     </div>
 
-    <script>
-        // JavaScript to trigger fade-in effect on scroll
-        document.addEventListener("DOMContentLoaded", function () {
-            window.addEventListener("scroll", function () {
-                var videos = document.querySelectorAll(".video-container");
-                videos.forEach(function (video) {
-                    if (isElementInViewport(video) && video.style.opacity === "0") {
-                        video.style.opacity = "1";
-                    }
-                });
-            });
+    <div id="right-section">
+        <div class="video-container">
+            <h2>name animation: with rain comes life</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Q9TTd9nmc5A?si=OjUflBxodW81aNPD" frameborder="0" allowfullscreen></iframe>
+        </div>
 
-            function isElementInViewport(el) {
-                var rect = el.getBoundingClientRect();
-                return (
-                    rect.top >= 0 &&
-                    rect.left >= 0 &&
-                    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-                    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-                );
-            }
-        });
-    </script>
+        <div class="video-container">
+            <h2>new york story: the beauty of new york</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/i1kqnj-U0Ec?si=ZSAU17MoJ5N3-9QI" frameborder="0" allowfullscreen></iframe>
+        </div>
+        
+        <div class="video-container">
+            <h2>animation on social issue: swipe left!</h2>
+            <iframe width="560" height="315" src=rc="swipe left on MTA prices.mp4" frameborder="0" allowfullscreen></iframe>
+        </div>
+   
+
+    </div>
 </body>
 
 </html>
