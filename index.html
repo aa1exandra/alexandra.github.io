@@ -26,6 +26,13 @@
             color: white;
             overflow: hidden;
         }
+
+         #content-container {
+            display: grid;
+            grid-template-columns: 45% 45%;
+            justify-content: space-around;
+            overflow: auto; /* Enable scrolling */
+        }
         
          #left-section img {
             max-width: 100%;
@@ -55,6 +62,8 @@
 </head>
 
 <body>
+    <div id="content-container">
+        
     <div id="left-section">
         <h1> alexandra rivera</h1>
         <img src="welcome.png" alt="welcome!" style="max-width: 100%;">
@@ -83,8 +92,7 @@
             <h2>photoshop animation: more sprinkles, please!</h2>
             <iframe width="560" height="315" src=rc="https://www.youtube.com/embed/fGyJaD0oQSk?si=UOK4Qjr3y2SwH2LP" frameborder="0" allowfullscreen></iframe>
         </div>
-   
-
+     </div>
     </div>
 </body>
 
