@@ -8,14 +8,13 @@
     <style>
         
         body {
-            background-image: url('background.jpeg');
+            background-image: url('background.jpeg'); 
             background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            font-weight: bold;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
+            font-family: 'Courier New', monospace;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            color: white;
         }
 
         .container {
@@ -41,10 +40,8 @@
         }
 
         .video-container {
-            margin: 20px;
-            text-align: center;
-            opacity: 0;
-            transition: opacity 1s ease-in-out;
+            opacity: 0; /* Initially set opacity to 0 for fade-in effect */
+            animation: fadeIn 2s forwards; /* 2s duration for fade-in effect */
         }
 
         .video-title {
