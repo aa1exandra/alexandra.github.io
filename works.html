@@ -1,1 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Showcase</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Courier New', Courier, monospace;
+            background-image: url('your-background-image.jpg'); /* Replace with your background image URL */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        #videos-container {
+            text-align: center;
+            color: white;
+            max-width: 800px;
+        }
+
+        .video-container {
+            margin-bottom: 20px;
+        }
+
+        iframe {
+            width: 100%;
+            max-width: 600px;
+            height: 315px; /* Adjust the height as needed */
+        }
+
+        h2 {
+            font-size: 1.5em;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="videos-container">
+        <div class="video-container">
+            <h2>Video 1: Title Here</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_1" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="video-container">
+            <h2>Video 2: Title Here</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <!-- Add more video containers as needed -->
+
+    </div>
+</body>
+
+</html>
 
