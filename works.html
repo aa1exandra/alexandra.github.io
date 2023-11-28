@@ -9,58 +9,68 @@
         body {
             margin: 0;
             font-family: 'Courier New', Courier, monospace;
-            background-image: url('pink background.jpeg'); /* Replace with your background image URL */
-            background-size: cover;
-            background-position: center;
+            background-color: #f0f0f0;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             height: 100vh;
         }
 
-        #videos-container {
-            text-align: center;
-            color: white;
-            max-width: 800px;
+        h1 {
+            color: black;
+            font-weight: bold;
         }
 
         .video-container {
-            margin-bottom: 20px;
+            text-align: center;
+            margin-top: 20px;
         }
 
-        iframe {
-            width: 100%;
-            max-width: 600px;
-            height: 315px; /* Adjust the height as needed */
+        .video-container h2 {
+            color: black;
+            font-weight: bold;
         }
 
-        h2 {
-            font-size: 1.5em;
-            margin-top: 10px;
+        button {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: hotpink;
+            color: white;
+            border: 2px solid hotpink;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        button:hover {
+            background-color: #ffc0cb; /* Lighter pink on hover */
         }
     </style>
 </head>
 
 <body>
-    <br> <br> <br> <br> <br> <br> <br>
-    <h1> alex's works </h1>
-    <div id="videos-container">
-        <div class="video-container">
-            <h2>name animation: with rain comes life</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/Q9TTd9nmc5A?si=OjUflBxodW81aNPD" frameborder="0" allowfullscreen></iframe>
-        </div>
+    <h1>Video Showcase</h1>
 
-        <div class="video-container">
-            <h2>new york story: the beauty of new york </h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/i1kqnj-U0Ec?si=ZSAU17MoJ5N3-9QI" frameborder="0" allowfullscreen></iframe>
-        </div>
-        
-<div class="video-container">
-            <h2> social cause animation: swipe left! </h2>
-           <iframe width="321" height="570" src="https://www.youtube.com/embed/An8GXDu3LxQ" title="swipe left on MTA prices" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
-        
+    <div class="video-container">
+        <h2>Video 1: Introduction</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Q9TTd9nmc5A?si=OjUflBxodW81aNPD"" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <div class="video-container">
+        <h2>Video 2: Tutorial</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/i1kqnj-U0Ec?si=ZSAU17MoJ5N3-9QI" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <!-- Add more video containers as needed -->
+
+    <button onclick="redirectToAbout()">About</button>
+
+    <script>
+        function redirectToAbout() {
+            window.location.href = 'index.html';
+        }
+    </script>
 </body>
 
 </html>
-
